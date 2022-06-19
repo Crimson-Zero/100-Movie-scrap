@@ -30,7 +30,7 @@ reversed_list = Reverse(movie_list)
 print(reversed_list)
 
 
-for data in reversed_list:
-    with open("movies.txt","a") as file:
+with open("movies.txt","w") as file:
+    for data in reversed_list:
         file.write(data)
         file.write("\n")
